@@ -26,13 +26,13 @@ class ViewController: UIViewController {
         currentValue = lroundf(Slider.value)
         targetValue = Int.random(in: 0...100)
     }
-    @IBAction func GuessnumberPress(_ sender: Any){
+    @IBAction func MyGuessPress(_ sender: Any){
     //5. New Variable message that displays a message that includes currentValue
         let message = "The value is: \(currentValue)" + "\nThe target value is: \(targetValue)"
         
         let alert = UIAlertController(title:"Hello World!", message: message,  preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
+        let action = UIAlertAction(title: "New Round", style: .default, handler: nil)
         
         alert.addAction(action)
        
