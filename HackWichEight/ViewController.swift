@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var TargetLabel: UILabel!    
     @IBOutlet weak var Slider: UISlider!
     //create a variable that can hold the value of the slider
     var currentValue = 0
@@ -53,4 +54,15 @@ class ViewController: UIViewController {
             currentValue = lroundf(Slider.value)
     }
 
+    
+    //Probelm set #1
+    func updateTargetLabel(){
+      
+    //Set targetlabel to display the targetValue
+        self.TargetLabel.text = String(targetValue)
+    
+    
+    }
+    
+    
 }
